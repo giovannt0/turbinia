@@ -392,7 +392,7 @@ class BaseTurbiniaClient(object):
     log.info('All {0:d} Tasks completed'.format(len(task_results)))
 
   def get_task_data(
-      self, instance, project, region, days=1000, task_id=None, request_id=None,
+      self, instance, project, region, days=0, task_id=None, request_id=None,
       user=None, function_name='gettasks'):
     """Gets task data from Google Cloud Functions.
 
@@ -677,7 +677,7 @@ class BaseTurbiniaClient(object):
     return '\n'.join(report)
 
   def format_task_status(
-      self, instance, project, region, days=1000, task_id=None, request_id=None,
+      self, instance, project, region, days=0, task_id=None, request_id=None,
       user=None, all_fields=False, full_report=False,
       priority_filter=Priority.HIGH):
     """Formats the recent history for Turbinia Tasks.
