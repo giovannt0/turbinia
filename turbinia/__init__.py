@@ -14,7 +14,7 @@
 # limitations under the License.
 """Main Turbinia application."""
 
-__version__ = '20190819.4'
+__version__ = '20190819.5'
 
 import logging
 log = logging.getLogger('turbinia')
